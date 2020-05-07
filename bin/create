@@ -3,9 +3,10 @@
 # Exit if any subcommand fails
 set -e
 
-bundle gem $1 --no-coc --no-git --no-mit --test=rspec
+bundle gem "$1" --no-coc --no-git --no-mit --test=rspec
 cd "$1"
 
+# macOS -i option requires an extension argument. Remove ".deleteme" for linux
 sed -i '.deleteme' "s/TODO: Put your gem\'s website or public repo URL here./https:\/\/changethisurl.com/g" "$1.gemspec"
 sed -i '.deleteme' "s/TODO: Put your gem\'s public repo URL here./https:\/\/changethisurltoo.com/g" "$1.gemspec"
 sed -i '.deleteme' "s/TODO: Put your gem\'s CHANGELOG.md URL here./https:\/\/changethisurl.com/g" "$1.gemspec"
