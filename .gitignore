@@ -1,0 +1,10 @@
+bundle_gem_produces_this/*
+
+Guardfile
+Gemfile.lock
+
+spec/spec_helper.rb
+.rspec
+
+tmp
+coverage
