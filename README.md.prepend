@@ -1,0 +1,26 @@
+[![Build Status](https://travis-ci.org/travisID/name.svg?branch=master)](https://travis-ci.org/travisID/name)
+[![Gem Version](https://badge.fury.io/rb/name.svg)](http://badge.fury.io/rb/name)
+
+---   DELETE BLOCK BELOW
+
+TODO: Edit this and describe your project.
+TODO: Update gemspec file
+TODO: Your gem will be created in the template project directory.
+      Move your new gem directory to somewhere permanent.
+TODO: Delete bin/create
+TODO: Update badge info at the top of this file
+TODO: Pick a license. Two (MIT and fully restricted) are included. Adjust the
+      bottom line of this README.
+      Also rename one LICENSE.txt.* file to LICENSE.txt, and delete the other
+TODO: Delete this header info.
+
+## Running Tests
+
+~~~
+bundle exec rspec
+or
+rake spec
+~~~
+
+Original README:
+---   DELETE BLOCK ABOVE

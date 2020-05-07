@@ -16,8 +16,10 @@ rm "$1.gemspec.deleteme"
 bundle update
 
 # Create new, blank README template
-cat ../README.md.template >> README.md
-#mv ../README.md.template README.md
+cat ../README.md.prepend > /tmp/newfile.md
+cat README.md >> /tmp/newfile.md
+cat ../README.md.append >> /tmp/newfile.md
+mv /tmp/newfile.md README.md
 
 # append extra onto the rails-generated gitignore
 cat ../gitignore.dotfile >> .gitignore
