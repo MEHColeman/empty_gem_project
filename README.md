@@ -7,7 +7,7 @@ Clone this project into your desired directory and run `bin/setup`
 ~~~
 ~/projects>hub clone MEHColeman/empty_gem_project new_gem
 ~/projects>cd new_gem
-~/projects/new_thing>bin/create
+~/projects/new_thing>bin/create <gem_name>
 ~~~
 
 This will:
@@ -18,15 +18,20 @@ This will:
   * Create a new, clean git repository with a single initial commit of your new
     files.
 
+The gem code will be in a subdirectory of of your cloned repository, so just
+move it to its permanent location
+
 ## Make tasks
 There are some commands set up in a Makefile to run various code quality
 checks.
 
 Makefile contains:
+~~~
 make secure    # run bundle audit to check for known vulnerabilities
 make quality   # run rubycritic and simplecov
 make fast      # run fasterer
 make all       # all of the above
+~~~
 
 ## License
 
